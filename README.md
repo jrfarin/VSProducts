@@ -3,7 +3,10 @@
 VencaShop Products 
 
 ## Comenzando 🚀
-Utiliza git clone y abre la carpeta y ejecuta "npm install"
+* Crea una Carpeta.
+* Utiliza git clone.
+* Abre la carpeta en VsCode (https://code.visualstudio.com/).
+* Ejecuta "npm install".
 
 ### Pre-requisitos 📋
 Debes tener instalado NODE JS
