@@ -10,10 +10,13 @@ $colorDisabled: #b2b2b2;
 // ===== VAR BACKGROUNDS ===== //
 $colorBgButton : #1c1c1c;
 $colorBgButtonHover : #dedede;
+$colorCartHeader : #dee2e6;
 
 
 // ====== VAR BORDERS ===== //
 $borderBottom: 1px solid #dee2e6;
+$borderBottomDark: 1px solid #808080;
+$borderDoubleModal : 6px double #dee2e6;
 
 
 // ===== VAR TEXT ===== //
@@ -89,7 +92,7 @@ $txtNotUnderlined: none;
 @mixin vcButton(){
     width: 100%;
     margin: 0 auto;
-    padding: 0.65rem 1.65rem;
+    padding: 1rem 1.65rem;
     font-weight: 300;
     text-transform: uppercase;
     color: $colorLight;
@@ -100,6 +103,7 @@ $txtNotUnderlined: none;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    text-transform: none;
     font-size: 1rem;
     font-weight: 300;
     padding: 0.5rem 0.4rem 0.5rem 0;

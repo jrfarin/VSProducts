@@ -16,15 +16,36 @@
     #sizes ul > li {
         padding: .75rem .5rem;
     }
+    .btn-dark:hover {
+        background-color: $colorVenca !important;
+    }
     #integerPricePart::after {
         content: ","
     }
+
+    #addToBasket span.add {display:block;}
+    #addToBasket span.added{display:none;}
+    #addToBasket.active {background: #aa0061 !important;}
+    #addToBasket.active > span.add {display:none;}
+    #addToBasket.active > span.added {display:block;}
+
+    .btn-custom {
+        background: #aa0061 !important;
+    }
+    .borderWhatIsThat {
+        border: $borderDoubleModal;
+    }
+
+
     .nav-pills .nav-link {
         border-radius: 0;
+        border-bottom: $borderBottomDark;
+        background-color: $colorCartHeader;
+        color: $colorBgButton;
     }
     .nav-pills .nav-link.active, 
         .nav-pills .show > .nav-link {
-            background-color: #1c1c1c;
+            background-color: darken($colorCartHeader, 12%)
     }
     #addProd {
         top:7%;

@@ -16,16 +16,7 @@
     <!-- Glider CSS-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./styles/css/main.min.css"> 
-    
-    <style>
-        #addToBasket span.add {display:block;}
-        #addToBasket span.added{display:none;}
-        #addToBasket.active {background: #aa0061 !important;}
-        #addToBasket.active > span.add {display:none;}
-        #addToBasket.active > span.added {display:block;}
-        .btn-custom {background: #aa0061 !important;}
-    </style>
+    <link rel="stylesheet" href="./styles/css/main.min.css">   
 </head>
 
 <body>  
@@ -83,7 +74,7 @@
                 <!-- WishIcon -->
                 <div class="position-absolute top-2 right-2" data-ob-model="productJS">
                     <div class="wishIconAnimate" id="addToWishListMB">
-                        <button class="border-0 rounded-circle bg-white p-2"><i class="far fa-heart FS-125"></i></button>
+                        <button class="border-0 rounded-circle bg-white p-2"><i class="far fa-heart FS-15"></i></button>
                     </div>
                 </div>
             </section>
@@ -91,9 +82,9 @@
             <!-- Main Structure for desktop -->
             <section class="row">
                 <div class="col-md-7 col-lg-8 d-none d-md-block">
-                    
-                    <!-- Swiper Thumbnails -->
                     <div class="row">
+
+                        <!-- Swiper Thumbnails -->
                         <div class="col-sm-2">
                             <section class="swiper-container" id="productThumbnails">
                                 <div class="swiper-wrapper">
@@ -183,12 +174,12 @@
                             <div class="vc-card">
                                 <div class="vc-card-header" id="headingDescMB">                                          
                                     <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseDescMB" aria-expanded="true" aria-controls="collapseDescMB">
-                                        <span>Descripción</span>
-                                        <i class="vc-color fas fa-minus"></i>
+                                        <span class="pt-1 px-2">Descripción</span>
+                                        <i class="fas fa-chevron-up pr-1"></i>
                                     </button>									
                                 </div>
                                 <div id="collapseDescMB" class="collapse show" aria-labelledby="headingDescMB" data-parent="#accordionDescMB">
-                                    <div class="card-body border-bottom pl-0">                                                                          
+                                    <div class="card-body pl-0 pb-1">                                                                          
                                         {{> partials/_Description }}
                                     </div>
                                 </div>
@@ -197,12 +188,12 @@
                             <div class="vc-card">
                                 <div class="vc-card-header" id="headingWashMB">                                          
                                     <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseWashMB" aria-expanded="true" aria-controls="collapseWashMB">
-                                        <span>Consejos de lavado</span>
-                                        <i class="vc-color fas fa-plus"></i>
+                                        <span class="pt-1 px-2">Consejos de lavado</span>
+                                        <i class="fas fa-chevron-down pr-1"></i>
                                     </button>									
                                 </div>
                                 <div id="collapseWashMB" class="collapse" aria-labelledby="headingWashMB" data-parent="#accordionDescMB">
-                                    <div class="card-body border-bottom pl-0">                                                                          
+                                    <div class="card-body pl-0 pb-1">                                                                          
                                         {{> partials/_CareInstructions }}
                                     </div>
                                 </div>
@@ -211,12 +202,12 @@
                             <div class="vc-card">
                                 <div class="vc-card-header" id="headingReviewsMB">                                          
                                     <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseReviewsMB" aria-expanded="true" aria-controls="collapseReviewsMB">
-                                        <span>Valoraciones</span>
-                                        <i class="vc-color fas fa-plus"></i>
+                                        <span class="pt-1 px-2">Valoraciones</span>
+                                        <i class="fas fa-chevron-down pr-1"></i>
                                     </button>									
                                 </div>
                                 <div id="collapseReviewsMB" class="collapse" aria-labelledby="headingReviewsMB" data-parent="#accordionDescMB">
-                                    <div class="card-body border-bottom pl-0">                                                                          
+                                    <div class="card-body pl-0 pb-1">                                                                          
                                         {{> partials/_Reviews}}
                                     </div>
                                 </div>
@@ -225,12 +216,12 @@
                             <div class="vc-card">
                                 <div class="vc-card-header" id="headingTechnicalMB">                                          
                                     <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseTechnicalMB" aria-expanded="true" aria-controls="collapseTechnicalMB">
-                                        <span>Detalles técnicos</span>
-                                        <i class="vc-color fas fa-plus"></i>
+                                        <span class="pt-1 px-2">Detalles técnicos</span>
+                                        <i class="fas fa-chevron-down pr-1"></i>
                                     </button>									
                                 </div>
                                 <div id="collapseTechnicalMB" class="collapse" aria-labelledby="headingTechnicalMB" data-parent="#accordionDescMB">
-                                    <div class="card-body border-bottom pl-0">                                                                          
+                                    <div class="card-body pl-0 pb-1">                                                                          
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, consequuntur libero vitae velit ad vel beatae. Ullam exercitationem minima nisi, praesentium eum molestias ut, incidunt atque est qui aliquam ratione.</p>
                                     </div>
                                 </div>
@@ -245,16 +236,16 @@
                 <div class="col-12">
                     <hr class="d-none d-md-block d-lg-none">
                     <ul class="nav nav-pills nav-fill flex-column flex-sm-row mb-3" id="pills-tab" role="tablist">
-                        <li class="nav-item border-bottom-sm">
+                        <li class="nav-item border-bottom-sm pr-1">
                             <a class="FS-1 nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-description" role="tab" aria-controls="pills-home" aria-selected="true">Descripción</a>
                         </li>
-                        <li class="nav-item border-bottom-sm">
+                        <li class="nav-item border-bottom-sm px-1">
                             <a class="FS-1 nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-washing" role="tab" aria-controls="pills-profile" aria-selected="false">Consejos de lavado</a>
                         </li>
-                        <li class="nav-item border-bottom-sm">
+                        <li class="nav-item border-bottom-sm px-1">
                             <a class="FS-1 nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-reviews" role="tab" aria-controls="pills-contact" aria-selected="false">Valoraciones</a>
                         </li>
-                        <li class="nav-item border-bottom-sm">
+                        <li class="nav-item border-bottom-sm pl-1">
                             <a class="FS-1 nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-details" role="tab" aria-controls="pills-contact" aria-selected="false">Detalles Técnicos</a>
                         </li>
                     </ul>

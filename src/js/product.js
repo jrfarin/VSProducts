@@ -30,7 +30,7 @@
         },
     });
 
-    // AddToBasket Btn
+    // AddToBasket Btn Behaviour
     $(function(){
         $('#addToBasket').on('click', function() {
             let addBox = $('#addProd');
