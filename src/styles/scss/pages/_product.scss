@@ -1,4 +1,16 @@
 #vcProduct {
+    a.openZoom {
+        // cursor: url(/img/plus-zoom.png), auto;
+        cursor: pointer
+    }
+    #productZoom {
+        button.close {
+            position:absolute;
+            top:-1%;
+            right:3%;
+            z-index:1055;
+        }
+    }
     .superPriceTag,
         .discountTag {
             position: absolute;
@@ -36,7 +48,6 @@
         border: $borderDoubleModal;
     }
 
-
     .nav-pills .nav-link {
         border-radius: 0;
         border-bottom: $borderBottomDark;
@@ -44,8 +55,8 @@
         color: $colorBgButton;
     }
     .nav-pills .nav-link.active, 
-        .nav-pills .show > .nav-link {
-            background-color: darken($colorCartHeader, 12%)
+    .nav-pills .show > .nav-link {
+        background-color: darken($colorCartHeader, 12%)
     }
     #addProd {
         top:7%;

@@ -9,10 +9,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <!-- Bootstrap core CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/css/mdb.min.css" rel="stylesheet">
     <!-- Swiper Slider -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css" integrity="sha512-uCQmAoax6aJTxC03VlH0uCEtE0iLi83TW1Qh6VezEZ5Y17rTrIE+8irz4H4ehM7Fbfbm8rb30OkxVkuwhXxrRg==" crossorigin="anonymous" />
     <!-- Glider CSS-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
     <!-- Custom CSS -->
@@ -82,8 +80,8 @@
             <!-- Main Structure for desktop -->
             <section class="row">
                 <div class="col-md-7 col-lg-8 d-none d-md-block">
+                    
                     <div class="row">
-
                         <!-- Swiper Thumbnails -->
                         <div class="col-sm-2">
                             <section class="swiper-container" id="productThumbnails">
@@ -152,6 +150,8 @@
                                 <div id="carrousel-tag" class="tagsBox dflex align-items-center text-uppercase">
                                     <div class="discountTag FS-15 font-weight-bold">-50%</div>
                                 </div>
+                                <!-- Zoom Modal -->
+                                {{> partials/_ProductZoom }}
                             </section>
                         </div>                
                     </div>
@@ -171,7 +171,7 @@
                         <!-- Accordion -->
                         <div class="accordion" id="accordionDescMB" data-filter-name="filters">
                             <!-- Description -->
-                            <div class="vc-card">
+                            <div class="vc-card pb-1">
                                 <div class="vc-card-header" id="headingDescMB">                                          
                                     <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseDescMB" aria-expanded="true" aria-controls="collapseDescMB">
                                         <span class="pt-1 px-2">Descripción</span>
@@ -185,7 +185,7 @@
                                 </div>
                             </div>
                             <!-- Washing Tricks -->
-                            <div class="vc-card">
+                            <div class="vc-card pb-1">
                                 <div class="vc-card-header" id="headingWashMB">                                          
                                     <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseWashMB" aria-expanded="true" aria-controls="collapseWashMB">
                                         <span class="pt-1 px-2">Consejos de lavado</span>
@@ -199,7 +199,7 @@
                                 </div>
                             </div>
                             <!-- Reviews -->
-                            <div class="vc-card">
+                            <div class="vc-card pb-1">
                                 <div class="vc-card-header" id="headingReviewsMB">                                          
                                     <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseReviewsMB" aria-expanded="true" aria-controls="collapseReviewsMB">
                                         <span class="pt-1 px-2">Valoraciones</span>
@@ -213,7 +213,7 @@
                                 </div>
                             </div>
                             <!-- Technical Details -->
-                            <div class="vc-card">
+                            <div class="vc-card pb-1">
                                 <div class="vc-card-header" id="headingTechnicalMB">                                          
                                     <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseTechnicalMB" aria-expanded="true" aria-controls="collapseTechnicalMB">
                                         <span class="pt-1 px-2">Detalles técnicos</span>
@@ -237,16 +237,24 @@
                     <hr class="d-none d-md-block d-lg-none">
                     <ul class="nav nav-pills nav-fill flex-column flex-sm-row mb-3" id="pills-tab" role="tablist">
                         <li class="nav-item border-bottom-sm pr-1">
-                            <a class="FS-1 nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-description" role="tab" aria-controls="pills-home" aria-selected="true">Descripción</a>
+                            <a class="FS-1 nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-description" role="tab" aria-controls="pills-home" aria-selected="true">
+                                <span class="FS-11">Descripción</span>
+                            </a>
                         </li>
                         <li class="nav-item border-bottom-sm px-1">
-                            <a class="FS-1 nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-washing" role="tab" aria-controls="pills-profile" aria-selected="false">Consejos de lavado</a>
+                            <a class="FS-1 nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-washing" role="tab" aria-controls="pills-profile" aria-selected="false">
+                                <span class="FS-11">Consejos de lavado</span>
+                            </a>
                         </li>
                         <li class="nav-item border-bottom-sm px-1">
-                            <a class="FS-1 nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-reviews" role="tab" aria-controls="pills-contact" aria-selected="false">Valoraciones</a>
+                            <a class="FS-1 nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-reviews" role="tab" aria-controls="pills-contact" aria-selected="false">
+                                <span class="FS-11">Valoraciones</span>
+                            </a>
                         </li>
                         <li class="nav-item border-bottom-sm pl-1">
-                            <a class="FS-1 nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-details" role="tab" aria-controls="pills-contact" aria-selected="false">Detalles Técnicos</a>
+                            <a class="FS-1 nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-details" role="tab" aria-controls="pills-contact" aria-selected="false">
+                                <span class="FS-11">Detalles Técnicos</span>
+                            </a>
                         </li>
                     </ul>
                     <div class="tab-content FS-1 pb-3" id="pills-tabContent">
@@ -312,12 +320,10 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
     <!-- Bootstrap core JavaScript -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/js/mdb.min.js"></script>
     <!-- Swiper Slider -->
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js" integrity="sha512-VHsNaV1C4XbgKSc2O0rZDmkUOhMKPg/rIi8abX9qTaVDzVJnrDGHFnLnCnuPmZ3cNi1nQJm+fzJtBbZU9yRCww==" crossorigin="anonymous"></script>
     <!-- Glider JS -->
-    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>  
-    
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+ 
 </body>
 </html>

@@ -33,16 +33,15 @@
         })
     })
 
-   /* Accordion Icons Up/Down */
+    // Accordion Icons Plus/Minus 
     $(function(){
         $(".collapse.show").each(function(){
-            $(this).prev(".vc-card-header").find(".fas").addClass("fa-chevron-up").removeClass("fa-chevron-down");
-        });
-        
+            $(this).prev(".vc-card-header").find(".fa").addClass("fa-minus").removeClass("fa-plus");
+        });     
         $(".collapse").on('show.bs.collapse', function(){
-            $(this).prev(".vc-card-header").find(".fas").removeClass("fa-chevron-down").addClass("fa-chevron-up");
+            $(this).prev(".vc-card-header").find(".fas").removeClass("fa-plus").addClass("fa-minus");
         }).on('hide.bs.collapse', function(){
-            $(this).prev(".vc-card-header").find(".fas").removeClass("fa-chevron-up").addClass("fa-chevron-down");
+            $(this).prev(".vc-card-header").find(".fas").removeClass("fa-minus").addClass("fa-plus");
         });
     })
 
