@@ -34,3 +34,7 @@
 .right-2 {
     @include absRight(2%);
 }
+
+.alpha-3 {
+   @include opacity(.3) 
+}

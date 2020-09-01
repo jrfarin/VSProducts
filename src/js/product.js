@@ -43,5 +43,26 @@
             }, (4000));    
         })
     });
+
+    // Modal Zoom Carousel Images
+    const modalZoom = document.getElementById('imgZoomModal');
+    const imgZoomIn = document.querySelectorAll('.carousel-item img.toZoom');
+    const imgZoomOut = document.getElementById('imgZoomOut');
+
+    imgZoomIn.forEach(function(item) {
+        item.addEventListener('click', function(e) {
+            modalZoom.style.display = 'block';
+            imgZoomOut.src = this.src;
+            imgZoomOut.alt = this.alt;
+        })
+    })
+
+    modalZoom.onclick = function() {
+        imgZoomOut.className +=  ' out';
+        setTimeout(function() {
+        modalZoom.style.display = 'none';
+        imgZoomOut.className = 'modal-content-img';
+        }, 400);         
+    }
 }());
 

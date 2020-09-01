@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Out VencaShop</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Swiper Slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css"
+        integrity="sha512-uCQmAoax6aJTxC03VlH0uCEtE0iLi83TW1Qh6VezEZ5Y17rTrIE+8irz4H4ehM7Fbfbm8rb30OkxVkuwhXxrRg=="
+        crossorigin="anonymous" />
+    <!-- Glider CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./styles/css/main.min.css">
+</head>
+
+<body>
+    <main class="container my-3">
+        <article id="vcProduct">
+            <!-- Breadcrumbs -->
+            <section class="row" id="breadcrumbs">
+                <div class="col">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb FS-1 pl-0 mb-1">
+                            <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                            <li class="breadcrumb-item"><a href="#">Mujer</a></li>
+                            <li class="breadcrumb-item"><a href="#"></a>Moda</li>
+                            <li class="breadcrumb-item active d-none d-md-block" aria-current="page">Bikini 2 piezas sujetador y braga estampado</li>
+                        </ol>
+                    </nav>
+                </div>
+            </section>
+
+            <!-- Main Structure -->
+            <section class="row mt-3">
+                <div class="col-12 col-sm-4">
+                    <p class="FS-1">Ups! Este artículo ya no esta disponible</p>
+                    <section class="position-relative my-3 alpha-3">
+                        <img src="https://www.venca.es/i/1548845/xm/vestido-tirantes-tropical-estampado-negro.jpg" alt="" class="img-fluid">
+                        <div id="carrousel-tag" class="tagsBox dflex align-items-center text-uppercase">
+                            <div class="discountTag FS-15 font-weight-bold">Agotado</div>
+                        </div>
+                        <h1 class="FS-1 mt-2">Vestido tirantes tropical</h1>
+                    </section>
+                    <!-- Description Stock Out -->
+                    <section id="descriptionFeaturesMB">
+                        <hr>
+                        <!-- Accordion -->
+                        <div class="accordion" id="accordionStockOut" data-filter-name="filters">
+                            <!-- Description -->
+                            <div class="vc-card pb-1">
+                                <div class="vc-card-header" id="headingDescMB">
+                                    <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseStockOut" aria-expanded="true" aria-controls="collapseStockOut">
+                                        <span class="pt-1 px-2">Descripción</span>
+                                        <i class="fas fa-chevron-down pr-1"></i>
+                                    </button>
+                                </div>
+                                <div id="collapseStockOut" class="collapse" aria-labelledby="headingStockOut" data-parent="#accordionStockOut">
+                                    <div class="card-body pl-0 pb-1">
+                                        {{> partials/_Description }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="col-12 col-sm-8 mt-4 mt-sm-0">
+                    <p class="FS-1 font-weight-bold">Quizás también te guste</p>
+                    <div class="row">
+                        <!-- Product 1 -->
+                        <div class="col-6 col-md-6 col-lg-4">
+                            <a href="" class="d-block">
+                                <div class="square-frame">
+                                    <img src="https://www.venca.es/i/1692200/m/camiseta-de-escote-v-con-bajo-de-acabado-redondeado-caqui.jpg"
+                                        class="img-fluid" alt="">
+                                </div>
+                                <div class="storyboard">
+                                    <div class="d-flex justify-content-between">
+                                        <span class="FS-11 font-weight-bold mb-2">Venca</span>
+                                    </div>
+                                    <p class="FS-1 text-truncate mb-1">Camiseta de escote V con bajo redondeado</p>
+                                    <div class="store-prices">
+                                        <span class=" text-muted pr-1">desde</span>
+                                        <span class="font-weight-bold storeFrontsFinalPrice">4,99€</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Product 2 -->
+                        <div class="col-6 col-md-6 col-lg-4">
+                            <a href="" class="d-block">
+                                <div class="square-frame">
+                                    <img src="https://www.venca.es/i/1546090/m/jersey-con-bolsillos-de-plastron-tricot-perlado-verde.jpg"
+                                        class="img-fluid" alt="">
+                                </div>
+                                <div class="storyboard">
+                                    <div class="d-flex justify-content-between">
+                                        <span class="FS-11 font-weight-bold mb-2">Venca</span>
+                                    </div>
+                                    <p class="FS-1 text-truncate mb-1">Jersey con bolsillos en tricot perlado</p>
+                                    <div class="store-prices">
+                                        <span class=" text-muted pr-1">desde</span>
+                                        <span class="font-weight-bold storeFrontsFinalPrice">9,99€</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Product 3 -->
+                        <div class="col-6 col-md-6 col-lg-4">
+                            <a href="" class="d-block">
+                                <div class="square-frame">
+                                    <img src="https://www.venca.es/i/1431148/m/vestido-de-punto-con-bolsillos-delanteros-caqui.jpg"
+                                        class="img-fluid" alt="">
+                                </div>
+                                <div class="storyboard">
+                                    <div class="d-flex justify-content-between">
+                                        <span class="FS-11 font-weight-bold mb-2">Venca</span>
+                                    </div>
+                                    <p class="FS-1 text-truncate mb-1">Vestido con bolsillos delanteros</p>
+                                    <div class="store-prices">
+                                        <span class=" text-muted pr-1">desde</span>
+                                        <span class="font-weight-bold storeFrontsFinalPrice">9,99€</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>             
+            </section>
+        </article>
+    </main>
+
+    <!-- ScrollToTop Button -->
+    <div class="d-none d-xl-block">
+        <div class="btn-scroll-top text-center">
+            <i class="fas fa-angle-up fa-2x text-white pt-2"></i>
+        </div>
+    </div>
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- Swiper Slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"
+        integrity="sha512-VHsNaV1C4XbgKSc2O0rZDmkUOhMKPg/rIi8abX9qTaVDzVJnrDGHFnLnCnuPmZ3cNi1nQJm+fzJtBbZU9yRCww=="
+        crossorigin="anonymous"></script>
+    <!-- Glider JS -->
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+
+</body>
+
+</html>

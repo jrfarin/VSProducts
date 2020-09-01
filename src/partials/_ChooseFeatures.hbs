@@ -150,13 +150,30 @@
                 </div>
 
                 <!-- Link To Size Guide --> 
-                    <div class="text-center pt-2" id="SizeGuide" data-ob-directive="Shared.SizeGuideDirective" data-seller="venca">
-                    <div class="text-uppercase" data-toggle="modal" data-target="#modalSizeGuide" data-track-event="">
+                <div class="text-center pt-2" id="SizeGuide" data-vc-id="sizeGuide" data-brand="@Model.TradeBrand">
+                    <div class="text-uppercase" data-toggle="modal" data-target="#modalSizeGuide">
                         <span><i class="fas fa-ruler"></i></span>
                         <span class="FS-075 text-muted">Guía de tallas</span>
                         <span><i class="FS-075 fas fa-chevron-right"></i></span>
                     </div>
-                </div>                              
+                </div>
+                <!-- Modal SG Mobile -->
+                <div class="modal fade" id="modalSizeGuide" tabindex="-1" role="dialog" aria-labelledby="modalSizeGuideLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-uppercase" id="modalSizeGuideLabel">Guía de tallas</h5>
+                                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                    <span class="d-block FS-15" aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                {{> _SizeGuideData }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>                   
         </div>
     </div>
@@ -208,14 +225,31 @@
                     </ul>
                 </div>                        
             </section>
+
             <!-- Sizes Guide -->
-            <section class="col-sm-12 col-md-6 px-tablet-0 d-none d-md-block" id="SizeGuide" data-ob-directive="Shared.SizeGuideDirective" data-seller="venca">
-                <span class="d-block cPointer py-2" data-toggle="modal" data-target="#modalSizeGuide" data-track-event="">
+            <section class="col-sm-12 col-md-6 px-tablet-0 d-none d-md-block" id="SizeGuide" data-vc-id="sizeGuide" data-brand="@Model.TradeBrand">
+                <span class="d-block cPointer py-2" data-toggle="modal" data-target="#modalSizeGuide">
                     <i class="fas fa-ruler"></i>
                     <span class="FS-075 text-uppercase px-2">Guía de tallas</span>
                     <i class="FS-075 fas fa-chevron-right"></i>
                 </span>
             </section>
+            <!-- Modal SG Desktop -->
+            <div class="modal fade" id="modalSizeGuide" tabindex="-1" role="dialog" aria-labelledby="SizeGuideLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-uppercase" id="modalSizeGuideLabel">Guía de tallas</h5>
+                            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                <span class="d-block FS-15" aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            {{> _SizeGuideData }}
+                        </div>
+                    </div>
+                </div>
+            </div>  
         </div>
     </div>                     
     

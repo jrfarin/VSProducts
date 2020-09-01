@@ -78,6 +78,9 @@ $txtNotUnderlined: none;
 @mixin hide($break) {
     display: none;
 }
+@mixin opacity($alpha) {
+    opacity: $alpha;
+}
 
 
 

@@ -23,3 +23,17 @@
         opacity: 1;
     }
 }
+
+// ===== Image Zoom Mobile Animation ===== //
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(1)}
+    to {-webkit-transform:scale(2)}
+}
+@keyframes zoom {
+    from {transform:scale(0.5)}
+    to {transform:scale(1)}
+}
+@keyframes zoom-out {
+    from {transform:scale(1)}
+    to {transform:scale(0)}
+}
